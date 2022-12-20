@@ -1,0 +1,11 @@
+[
+    {
+        "ParameterKey": "EnvironmentName",
+        "ParameterValue": "High-Available-Web-App"
+    },
+    {
+        "ParameterKey":"publicCidrIP",
+        "ParameterValue":"0.0.0.0/0"
+    }
+
+]
