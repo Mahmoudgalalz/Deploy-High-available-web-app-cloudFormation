@@ -134,3 +134,10 @@ Resources:
             - /
       ListenerArn: !Ref Listner
       Priority: 1
+
+Outputs:
+  WebAppLoadBalancer:
+    Description: Web app URL via load balancer
+    Value: !Join [ "", [ "http://", !GetAtt WebAppLoadBalancer.DNSName]]
+    Export:
+      Name: "URL"
