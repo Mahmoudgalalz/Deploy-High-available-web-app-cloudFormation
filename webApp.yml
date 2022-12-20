@@ -57,10 +57,10 @@ Resources:
           sudo apt-get install apache2 -y
           sudo systemctl start apache2.service    
           cd /var/www/html
-          echo "Udacity Demo Web Server Up and Running" > index.html      
+          echo "it works! Udagram, Udacity, Deploying a high Available app using cloudformation by Mahmoud Galal" > index.html      
       ImageId: ami-0574da719dca65348
       SecurityGroups:
-      - Ref: WebServerSecGroup
+      - Ref: InstanceSecurityGroup
       InstanceType: t3.medium
       BlockDeviceMappings:
       - DeviceName: "/dev/sdk"
